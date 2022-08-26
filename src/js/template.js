@@ -30,6 +30,7 @@ class Template {
             },
         });
 
+        this.mainPlay = this.container.querySelector('.dplayer-main-play');
         this.volumeBar = this.container.querySelector('.dplayer-volume-bar-inner');
         this.volumeBarWrap = this.container.querySelector('.dplayer-volume-bar');
         this.volumeBarWrapWrap = this.container.querySelector('.dplayer-volume-bar-wrap');

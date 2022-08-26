@@ -28,7 +28,8 @@ class ContextMenu {
                 this.hide();
             });
         };
-        this.player.container.addEventListener('contextmenu', this.contextmenuHandler);
+        //鼠标右键菜单打开
+        // this.player.container.addEventListener('contextmenu', this.contextmenuHandler);
     }
 
     show(x, y) {

@@ -20,6 +20,7 @@ export default (options) => {
         apiBackend: defaultApiBackend,
         video: {},
         contextmenu: [],
+        nav: true,
         mutex: true,
         pluginOptions: { hls: {}, flv: {}, dash: {}, webtorrent: {} },
         preventClickToggle: false,

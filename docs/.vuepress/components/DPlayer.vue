@@ -1,7 +1,7 @@
 <template>
-<div class="dplayer-wrap">
-    <div class="dplayer" ref="dplayer"><button class="load" v-on:click="load">Load demo</button></div>
-</div>
+    <div class="dplayer-wrap">
+        <div class="dplayer" ref="dplayer"><button class="load" v-on:click="load">Load demo</button></div>
+    </div>
 </template>
 <script>
 export default {
@@ -21,6 +21,7 @@ export default {
                 preload: 'auto',
                 logo: 'https://i.loli.net/2019/06/06/5cf8c5d94521136430.png',
                 volume: 0.7,
+                nav: true,
                 mutex: true,
                 screenshot: true,
                 subtitle: {

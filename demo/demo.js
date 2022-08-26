@@ -103,6 +103,7 @@ function initPlayers() {
         hotkey: true,
         logo: 'https://i.loli.net/2019/06/06/5cf8c5d94521136430.png',
         volume: 0.2,
+        nav: true,
         mutex: true,
         lang: 'zh-cn',
         video: {
@@ -157,7 +158,7 @@ function initPlayers() {
     const eventsEle = document.getElementById('events');
     for (let i = 0; i < events.length; i++) {
         dp2.on(events[i], (info) => {
-            eventsEle.innerHTML += `<p>Event: ${events[i]} ${info?`Data: <span>${JSON.stringify(info)}</span>`:''}</p>`;
+            eventsEle.innerHTML += `<p>Event: ${events[i]} ${info ? `Data: <span>${JSON.stringify(info)}</span>` : ''}</p>`;
             eventsEle.scrollTop = eventsEle.scrollHeight;
         });
     }

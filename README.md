@@ -1,3 +1,7 @@
+## 需要全局安装
+~~~
+npm -g i art-template
+~~~
 <p align="center">
 <img src="https://i.imgur.com/LnPvZvO.png" alt="ADPlayer" width="100">
 </p>

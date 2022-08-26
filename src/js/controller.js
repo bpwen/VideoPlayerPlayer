@@ -42,6 +42,7 @@ class Controller {
 
     initPlayButton() {
         this.player.template.playButton.addEventListener('click', () => {
+            this.player.template.mainPlay.remove('hidden');
             this.player.toggle();
         });
 
@@ -296,14 +297,14 @@ class Controller {
                 const sessionRequest = new cast.SessionRequest(cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID);
                 const apiConfig = new cast.ApiConfig(
                     sessionRequest,
-                    () => {},
+                    () => { },
                     (status) => {
                         if (status === cast.ReceiverAvailability.AVAILABLE) {
                             console.log('chromecast: ', status);
                         }
                     }
                 );
-                cast.initialize(apiConfig, () => {});
+                cast.initialize(apiConfig, () => { });
             }
         };
     }
